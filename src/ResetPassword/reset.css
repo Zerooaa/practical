@@ -1,0 +1,142 @@
+/* Basic layout */
+.reset-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  .reset-card {
+    background: white;
+    padding: 40px 30px; /* Adjust padding to be consistent with the login page */
+    border-radius: 12px; /* Use same border radius for consistency */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Similar shadow to login page */
+    width: 100%;
+    max-width: 500px; /* Max width for larger screens, similar to the login page */
+    text-align: center;
+  }
+  
+  /* Title styles */
+  .reset-title {
+    color: #1a1aff; /* Blue color, same as login page */
+    font-size: 28px; /* Title font size similar to login page */
+    margin-bottom: 20px;
+  }
+  
+  /* Form structure */
+  .reset-form .form-group {
+    margin-bottom: 20px; /* Increased spacing for better layout */
+    text-align: left;
+  }
+  
+  .reset-form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .reset-form input {
+    width: 100%;
+    padding: 12px; /* Slightly increased padding for better touch interaction */
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Rounded corners for input fields */
+    font-size: 14px;
+  }
+  
+  /* Button group layout */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .send-button,
+  .back-button {
+    width: 45%;
+    padding: 14px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Button colors */
+  .send-button {
+    background-color: #0000ff;
+  }
+  
+  .back-button {
+    background-color: #333;
+  }
+  
+  /* Error and success messages */
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Responsive design for mobile */
+  @media screen and (max-width: 768px) {
+    .reset-card {
+      padding: 30px 20px; /* Adjust padding on smaller screens */
+    }
+  
+    .reset-title {
+      font-size: 24px; /* Slightly smaller title on mobile */
+    }
+  
+    .reset-form .form-group {
+      margin-bottom: 25px; /* More margin for spacing between form fields */
+    }
+  
+    .reset-form input {
+      padding: 14px; /* Larger padding for easier touch on mobile */
+    }
+  
+    .button-group {
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 20px; /* Increased gap between buttons */
+    }
+  
+    .send-button,
+    .back-button {
+      width: 100%; /* Full width buttons on mobile */
+    }
+  
+    .error-message,
+    .success-message {
+      font-size: 14px; /* Larger font size for error/success messages on mobile */
+    }
+  }
+  
+  /* Extra small devices (max-width: 480px) */
+  @media screen and (max-width: 480px) {
+    .reset-card {
+      padding: 20px 15px; /* Adjust padding for very small screens */
+    }
+  
+    .reset-title {
+      font-size: 22px; /* Make title slightly smaller for very small screens */
+    }
+  
+    .reset-form input {
+      padding: 12px; /* Adjust input padding */
+    }
+  
+    .send-button,
+    .back-button {
+      padding: 16px; /* Larger padding for buttons */
+      font-size: 18px; /* Bigger font size for buttons */
+    }
+  }
+  

@@ -1,0 +1,88 @@
+{
+  "accounts": [
+    {
+      "empId": 1,
+      "username": "Mikha",
+      "email": "mikha@gmail.com",
+      "password": "M1khaL1m",
+      "id": "97f6"
+    },
+    {
+      "empId": 2,
+      "username": "Suzy",
+      "email": "suzy@gmail.com",
+      "password": "123123",
+      "id": "2822"
+    },
+    {
+      "empId": 3,
+      "username": "Yujin",
+      "email": "yujin@gmail.com",
+      "password": "asawan1mark",
+      "id": "3c9a"
+    },
+    {
+      "empId": 4,
+      "username": "Mark",
+      "email": "mark@gmail.com",
+      "password": "123123123",
+      "id": "ea07"
+    }
+  ],
+  "employee": [
+    {
+      "empId": 1,
+      "name": "Mikha Lim",
+      "position": "Manager",
+      "department": "HR",
+      "contact": "09123456789",
+      "id": "6933"
+    },
+    {
+      "empId": 2,
+      "name": "Suzy Bae",
+      "position": "Developer",
+      "department": "IT",
+      "contact": "09123456789",
+      "id": "db13"
+    },
+    {
+      "empId": 3,
+      "name": "Yujin Ahn",
+      "position": "Developer",
+      "department": "IT",
+      "contact": "09123456789",
+      "id": "eeef"
+    }
+  ],
+  "empTime": [
+    {
+      "id": "1",
+      "empId": 1,
+      "date": "2025-01-30",
+      "time_in": "12:56:14 PM",
+      "time_out": "12:57:19 PM"
+    },
+    {
+      "id": "2",
+      "empId": 2,
+      "date": "2025-01-30",
+      "time_in": "01:01:03 PM",
+      "time_out": "01:01:27 PM"
+    },
+    {
+      "id": "3",
+      "empId": 4,
+      "date": "2025-01-30",
+      "time_in": "01:34:55 PM",
+      "time_out": "01:38:35 PM"
+    },
+    {
+      "id": "4",
+      "empId": 3,
+      "date": "2025-01-30",
+      "time_in": "01:44:55 PM",
+      "time_out": "01:46:10 PM"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+.homepage-container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.cards-container {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 55%; /* Increased width for a wider look */
+    min-width: 600px; /* Ensuring cards are larger */
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #0a2a66, #1d4ed8);
+    color: white;
+    padding: 18px 22px;
+    border-radius: 12px 12px 0 0;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+}
+
+.card-header::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 55px;
+    height: 55px;
+    background: no-repeat center;
+    opacity: 0.2;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 12px;
+}
+
+.styled-table th, .styled-table td {
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+}
+
+.styled-table th {
+    background: #f4f4f4;
+    font-weight: bold;
+}
+
+.styled-table tr:hover {
+    background: #f9f9f9;
+}
+
+.btn {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.time-btn {
+    background: #007bff;
+    color: white;
+}
+
+.apply-btn {
+    background: #28a745;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination span {
+    font-size: 16px;
+  }
+
+  .logout-btn {
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+  
+  .logout-btn:hover {
+    background-color: darkred;
+  }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 85%;
+        min-width: unset;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 95%;
+    }
+}

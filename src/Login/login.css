@@ -1,0 +1,158 @@
+/* Basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Main container */
+  .login-container {
+    max-width: 800px; /* Maximum width for desktop */
+    width: 100%;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 40px 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  /* Login title */
+  .login-title {
+    font-size: 28px;
+    color: #1a1aff;
+    margin-bottom: 20px;
+  }
+  
+  /* Form structure */
+  .login-form {
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Button styles */
+  .login-button {
+    width: 100%;
+    background-color: #1a1aff;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .login-button:hover {
+    background-color: #1414cc;
+  }
+  
+  /* Forgot password link */
+  .forgot-password {
+    display: block;
+    margin-top: 15px;
+    color: gray;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer text */
+  .login-footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Mobile responsive design */
+  @media screen and (max-width: 768px) {
+    .login-container {
+      padding: 30px 20px; /* Adjust padding on smaller screens */
+    }
+  
+    .login-title {
+      font-size: 24px;
+    }
+  
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+    }
+  
+    .login-button {
+      padding: 14px; /* Slightly bigger button on mobile for better touch interaction */
+      font-size: 18px;
+    }
+  
+    .forgot-password {
+      font-size: 16px; /* Larger font for readability on mobile */
+    }
+  
+    .login-footer {
+      font-size: 10px; /* Smaller footer text on mobile */
+    }
+  
+    .form-group {
+      margin-bottom: 20px;
+    }
+  }
+  
+
+  @media screen and (max-width: 480px) {
+    .login-container {
+      padding: 20px;
+    }
+  
+    .login-title {
+      font-size: 22px;
+    }
+  
+    input[type="text"],
+    input[type="password"] {
+      padding: 8px;
+    }
+  
+    .login-button {
+      padding: 16px;
+      font-size: 18px;
+    }
+  
+    .forgot-password {
+      font-size: 14px;
+    }
+  }
+  
