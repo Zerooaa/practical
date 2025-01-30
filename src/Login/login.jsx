@@ -40,11 +40,18 @@ export default function Login() {
   const handlePasswordChange = (e) => {
     const value = e.target.value;
     setPassword(value);
-
+  
     const isPasswordValid = value.length >= 4;
     const isEmailValid = validateEmail(email);
     setIsButtonDisabled(!(isPasswordValid && isEmailValid));
   };
+  
+  useEffect(() => {
+    const isPasswordValid = password.length >= 4;
+    const isEmailValid = validateEmail(email);
+  
+    setIsButtonDisabled(!(isPasswordValid && isEmailValid));
+  }, [email, password]);
 
   
 const handleSubmit = async () => {

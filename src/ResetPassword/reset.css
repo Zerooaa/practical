@@ -37,12 +37,14 @@
   }
   
   .reset-form input {
-    width: 100%;
-    padding: 12px; /* Slightly increased padding for better touch interaction */
+    width: 100%; /* Ensure the input takes full width of the container */
+    padding: 12px; /* Adjust padding for a more comfortable experience */
     margin-top: 5px;
     border: 1px solid #ddd;
     border-radius: 5px; /* Rounded corners for input fields */
     font-size: 14px;
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+    transition: all 0.3s ease; /* Smooth transition for input focus */
   }
   
   /* Button group layout */
@@ -101,6 +103,7 @@
   
     .reset-form input {
       padding: 14px; /* Larger padding for easier touch on mobile */
+      font-size: 16px; /* Larger font size for easier typing on mobile */
     }
   
     .button-group {
@@ -131,6 +134,7 @@
   
     .reset-form input {
       padding: 12px; /* Adjust input padding */
+      font-size: 14px; /* Make font size smaller on extra small screens */
     }
   
     .send-button,
